@@ -16,10 +16,10 @@ function TodoItem({ title, status, onDelete, id, onToggle }) {
         display: "flex",
         padding: "1rem",
         gap: "2rem",
-        border: "1px solid gray",
-        borderRadius: "20px",
-        background: "green",
-        margin: "20px"
+        border: "2px solid blue",
+        borderRadius: "10px",
+        background: "cornsilk",
+        margin: "10px"
       }}
     >
       <div
@@ -30,7 +30,8 @@ function TodoItem({ title, status, onDelete, id, onToggle }) {
           color: "white",
           border: "2px solid blue",
           borderRadius: "10px",
-          margin: "10px"
+          margin: "10px",
+          width: "250px"
         }}
       >
         {title}
@@ -43,7 +44,8 @@ function TodoItem({ title, status, onDelete, id, onToggle }) {
           color: "white",
           border: "2px solid blue",
           borderRadius: "10px",
-          margin: "10px"
+          margin: "10px",
+          width: "150px"
         }}
       >{`${status}`}</div>
       <button
@@ -54,7 +56,8 @@ function TodoItem({ title, status, onDelete, id, onToggle }) {
           color: "white",
           border: "2px solid blue",
           borderRadius: "10px",
-          margin: "10px"
+          margin: "10px",
+          width: "150px"
         }}
         onClick={() => onDelete(id)}
       >
@@ -68,7 +71,8 @@ function TodoItem({ title, status, onDelete, id, onToggle }) {
           color: "white",
           border: "2px solid blue",
           borderRadius: "10px",
-          margin: "10px"
+          margin: "10px",
+          width: "200px"
         }}
         onClick={() => onToggle(id)}
       >
