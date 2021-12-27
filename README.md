@@ -1,2 +1,2 @@
-# React-redux-with-routes
+# Todo-List-Uding-Redux-Thunk
 Created with CodeSandbox
