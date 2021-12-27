@@ -17,9 +17,8 @@ const Counter = () => {
     <div>
       <h1
         style={{
-          background: "teal",
+          background: "aqua",
           padding: "10px",
-          color: "white",
           border: "2px solid blue",
           borderRadius: "10px",
           width: "30px",
