@@ -12,13 +12,42 @@ function LeaveMsg() {
   };
   return (
     <div>
-      <h3>{msg}</h3>
+      <h3
+        style={{
+          background: "aqua",
+          padding: "10px",
+          border: "2px solid blue",
+          borderRadius: "10px",
+          margin: "auto",
+          marginTop: "10px",
+          width: "300px"
+        }}
+      >
+        {msg}
+      </h3>
       <input
+        style={{
+          height: "30px",
+          borderRadius: "10px",
+          border: "2px solid blue",
+          marginTop: "20px"
+        }}
         type="text"
         placeholder="Leave a msg"
         onChange={(e) => setUserMsg(e.target.value)}
       />
-      <button onClick={handleAdd}>MSG</button>
+      <button
+        style={{
+          height: "40px",
+          borderRadius: "10px",
+          border: "2px solid blue",
+          background: "black",
+          color: "white"
+        }}
+        onClick={handleAdd}
+      >
+        MSG
+      </button>
     </div>
   );
 }
