@@ -15,9 +15,48 @@ const Counter = () => {
   };
   return (
     <div>
-      <h3>{count}</h3>
-      <button onClick={handleIncrement}>INCREMENT</button>
-      <button onClick={handleDecrement}>DECREMENT</button>
+      <h1
+        style={{
+          background: "teal",
+          padding: "10px",
+          color: "white",
+          border: "2px solid blue",
+          borderRadius: "10px",
+          width: "30px",
+          margin: "auto",
+          marginTop: "10px"
+        }}
+      >
+        {count}
+      </h1>
+      <button
+        onClick={handleIncrement}
+        style={{
+          background: "teal",
+          padding: "10px",
+          fontSize: "17px",
+          color: "white",
+          border: "2px solid blue",
+          borderRadius: "10px",
+          margin: "10px"
+        }}
+      >
+        INCREMENT
+      </button>
+      <button
+        onClick={handleDecrement}
+        style={{
+          background: "teal",
+          padding: "10px",
+          fontSize: "17px",
+          color: "white",
+          border: "2px solid blue",
+          borderRadius: "10px",
+          margin: "10px"
+        }}
+      >
+        DECREMENT
+      </button>
     </div>
   );
 };
